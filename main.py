@@ -23,7 +23,7 @@ if "messages" not in st.session_state:
     ]
 
 st.title("예제")
-user_input = st.chat_input("여기에 메시지를 입력하시오")
+user_input = st.chat_input("Your message here!")
 
 if user_input:
     st.session_state.messages.append({"role": "user", "content": user_input})
