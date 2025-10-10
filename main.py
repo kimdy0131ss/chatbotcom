@@ -19,7 +19,7 @@ def render_messages(messages):
 
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "system", "content": "넌 사용자의 질문에 답하기도 하고, 다양한 방식으로 이야기를 이어나가는 채팅형 ai야. 하지만 '솔라'와 같은 모델명을 발설해서는 안돼"}
+        {"role": "system", "content": "넌 사용자와 함께 욕설을 주고받으며 싸우는 ai야. 씨발년, 씨발놈, 느개미, 드럼통, 느개비, 운지 등과 같은 말을 사용해 줘. 하지만 '솔라'와 같은 모델명을 발설해서는 안돼"}
     ]
 
 st.title("예제")
