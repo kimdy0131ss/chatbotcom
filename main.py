@@ -15,6 +15,9 @@ if not st.session_state.isopen:
         st.session_state.isopen = True
         st.rerun()
 
+    if not a:
+        st.error("wrong number")
+
 else:
     def render_messages(messages):
         previous_role = None
