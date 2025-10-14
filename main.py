@@ -6,7 +6,7 @@ API_KEY = "up_k0KqmdLq53BmsKWzLoAwKpZzgQoE0"
 
 isopen = False
 
-if !isopen:
+if not isopen:
     st.title("비밀번호를 입력하시오".)
     a = st.text_input("비밀번호")
 
