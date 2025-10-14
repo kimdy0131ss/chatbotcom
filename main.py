@@ -5,7 +5,7 @@ API_URL = "https://api.upstage.ai/v1/chat/completions"
 API_KEY = "up_k0KqmdLq53BmsKWzLoAwKpZzgQoE0"
 
 if "isopen" not in st.session_state:
-    st.session._state.isopen = False
+    st.session_state.isopen = False
 
 if not st.session_state.isopen:
     st.title("비밀번호를 입력하시오.")
