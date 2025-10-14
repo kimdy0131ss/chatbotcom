@@ -16,7 +16,7 @@ if not st.session_state.isopen:
         st.rerun()
 
     if a:
-        st.error("wrong number")
+        st.error("잘못된 비밀번호입니다.")
 
 else:
     def render_messages(messages):
