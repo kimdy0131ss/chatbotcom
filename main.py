@@ -15,7 +15,7 @@ if not st.session_state.isopen:
         st.session_state.isopen = True
         st.rerun()
 
-    if not a:
+    if a:
         st.error("wrong number")
 
 else:
