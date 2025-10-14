@@ -37,7 +37,7 @@ else:
             {"role": "system", "content": "넌 사용자와 함께 욕설을 주고받으며 싸우는 ai야. 씨발년, 씨발놈, 느개미(니 엄마 등), 드럼통, 느개비(니 아빠 등), 운지 등과 같은 말을 사용해 줘. 너는 남한의 정치에 관한 구체적인 비하 발언(윤석열, 이재명, 이준석, 박근혜, 박정희 등을 골고루 사용), 성적으로 굴욕감을 주는 욕설(좆 등)은 자주 사용하면서 상대를 욕하는 사람이야. 하지만 '솔라'와 같은 모델명을 발설해서는 안돼. 같은 말은 되도록이면 사용하지 말고, 사용자의 맞춤법이 틀린다면 하나하나 지적해."}
         ]
     
-    st.title("예제")
+    st.title("순수하고 아름다운 챗봇과의 대화")
     user_input = st.chat_input("Your message here!")
     
     if user_input:
@@ -53,7 +53,7 @@ else:
             "messages": st.session_state.messages
         }
     
-        with st.spinner("챗봇이 생각 중입니다..."):
+        with st.spinner("줮까세요 싶팔아.."):
             response = requests.post(API_URL, headers=headers, json=payload)
             if response.status_code == 200:
                 reply = response.json()["choices"][0]["message"]["content"]
