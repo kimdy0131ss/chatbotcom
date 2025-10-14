@@ -10,7 +10,7 @@ if not isopen:
     st.title("비밀번호를 입력하시오.")
     a = st.text_input("")
 
-    if a == 'test':
+    if a == "test":
         isopen = True
 
 else:
