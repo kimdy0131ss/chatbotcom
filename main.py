@@ -4,14 +4,16 @@ import requests
 API_URL = "https://api.upstage.ai/v1/chat/completions"
 API_KEY = "up_k0KqmdLq53BmsKWzLoAwKpZzgQoE0"
 
-isopen = False
+if isopen not in st.session_state:
+    st.session._state.isopen = False
 
-if not isopen:
+if not st.session_state.isopen:
     st.title("비밀번호를 입력하시오.")
     a = st.text_input("")
 
     if a == "test":
-        isopen = True
+        st.session_state.isopen = True
+        st.rerun
 
 else:
     def render_messages(messages):
