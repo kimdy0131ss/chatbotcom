@@ -11,7 +11,7 @@ if not st.session_state.isopen:
     st.title("비밀번호를 입력하시오.")
     a = st.text_input("")
 
-    if a == "test":
+    if a == "5178579":
         st.session_state.isopen = True
         st.rerun()
 
