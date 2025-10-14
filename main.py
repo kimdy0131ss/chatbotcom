@@ -13,7 +13,7 @@ if not st.session_state.isopen:
 
     if a == "test":
         st.session_state.isopen = True
-        st.rerun
+        st.rerun()
 
 else:
     def render_messages(messages):
