@@ -4,6 +4,8 @@ import requests
 API_URL = "https://api.upstage.ai/v1/chat/completions"
 API_KEY = "up_k0KqmdLq53BmsKWzLoAwKpZzgQoE0"
 
+a = st.textbox("비밀번호")
+'''
 def render_messages(messages):
     previous_role = None
     for msg in messages:
@@ -48,3 +50,4 @@ if user_input:
         st.rerun()
 else:
     render_messages(st.session_state.messages)
+'''
