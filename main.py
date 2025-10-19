@@ -43,7 +43,7 @@ else:
             {"role": "system", "content": prompt}
         ]
     
-    st.title("예제")
+    st.title("챗봇")
     user_input = st.chat_input("Your message here!")
     
     if user_input:
@@ -59,7 +59,7 @@ else:
             "messages": st.session_state.messages
         }
     
-        with st.spinner("챗봇이 생각 중입니다..."):
+        with st.spinner("줮까세요 싶팔"):
             response = requests.post(API_URL, headers=headers, json=payload)
             if response.status_code == 200:
                 reply = response.json()["choices"][0]["message"]["content"]
