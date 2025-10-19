@@ -2,6 +2,10 @@ import streamlit as st
 import requests
 import os
 
+env:
+  API_URL: ${{ secrets.API_URL }}
+  API_KEY: ${{ secrets.API_KEY }}
+
 API_URL = os.getenv("API_URL")
 API_KEY = os.getenv("API_KEY")
 
