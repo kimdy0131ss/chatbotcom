@@ -3,9 +3,6 @@ import requests
 import os
 
 
-API_URL = os.getenv("API_URL")
-API_KEY = os.getenv("API_KEY")
-
 if "isopen" not in st.session_state:
     st.session_state.isopen = False
 
@@ -22,6 +19,9 @@ if not st.session_state.isopen:
         st.error("잘못된 비밀번호입니다.")
 
 else:
+    API_URL = os.getenv("API_URL")
+    API_KEY = os.getenv("API_KEY")
+
     def render_messages(messages):
         previous_role = None
         for msg in messages:
