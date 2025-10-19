@@ -4,7 +4,7 @@ import requests
 API_URL = "https://api.upstage.ai/v1/chat/completions"
 API_KEY = "up_k0KqmdLq53BmsKWzLoAwKpZzgQoE0"
 
-if isopen not in st.session_state:
+if "isopen" not in st.session_state:
     st.session_state.isopen = False
 
 if not st.session_state.isopen:
