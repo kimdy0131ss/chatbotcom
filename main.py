@@ -1,7 +1,9 @@
+from dotenv import load_dotenv
 import streamlit as st
 import requests
 import os
 
+load_dotenv()
 
 if "isopen" not in st.session_state:
     st.session_state.isopen = False
