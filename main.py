@@ -22,9 +22,9 @@ else:
     API_URL = os.getenv("API_URL")
     API_KEY = os.getenv("API_KEY")
 
-    if not API_URL or not API_KEY:
-        st.error("API_URL 또는 API_KEY 환경 변수가 설정되지 않았습니다.")
-        st.stop()
+    st.write("API_URL:", API_URL)
+    st.write("API_KEY:", API_KEY)
+
 
 
     def render_messages(messages):
