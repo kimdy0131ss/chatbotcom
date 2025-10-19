@@ -1,8 +1,9 @@
 import streamlit as st
 import requests
+import os
 
-API_URL = "https://api.upstage.ai/v1/chat/completions"
-API_KEY = "up_k0KqmdLq53BmsKWzLoAwKpZzgQoE0"
+API_URL = os.getenv("API_URL")
+API_KEY = os.getenv("API_KEY")
 
 if "isopen" not in st.session_state:
     st.session_state.isopen = False
